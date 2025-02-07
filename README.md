@@ -86,4 +86,4 @@ This repository contains solutions to five algorithmic problems, each requiring 
 | Encryption    | Sorting + Greedy Selection | O(N²) |
 | Offer         | Dynamic programming       | O(n) |
 
-Each solution leverages a tailored algorithmic strategy to optimize performance. 🚀 Happy coding!
+Each solution leverages a tailored algorithmic strategy to optimize performance.
