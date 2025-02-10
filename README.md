@@ -1,10 +1,10 @@
-# Efficient Algorithms: Searching, DP & Optimization 🚀
+## Efficient Algorithms: Searching, DP & Optimization 🚀
 
 This repository contains solutions to five algorithmic problems, each requiring a unique approach, from dynamic programming to binary search. Below is a brief overview of each solution.
 
 ---
 
-## 🔋 Server Power Optimization
+### 🔋 Server Power Optimization
 
 ### Approach
 - **Binary search** on the possible power limit.
@@ -12,27 +12,27 @@ This repository contains solutions to five algorithmic problems, each requiring 
 - Adjust `mid` based on computed power values.
 - **Stopping condition:** `min1 == min2`, meaning we've maximized the power supply.
 
-### Complexity
+#### Complexity
 **O(log n)** – binary search ensures efficient convergence.
 
 ---
 
-## 🎨 Coloring
+### 🎨 Coloring
 
-### Approach
+#### Approach
 - Utilizes **modular exponentiation** (`fastPow`) for efficiency.
 - Six cases based on `H` (horizontal) and `V` (vertical) positioning.
 - Uses two **coefficient arrays** to store values dynamically.
 - Smartly applies **multiplication rules** based on previous character positioning.
 
-### Complexity
+#### Complexity
 **O(n)** – single-pass computation.
 
 ---
 
-## 🗜 Compression
+### 🗜 Compression
 
-### Approach
+#### Approach
 - Read two sequences and use **two indices** to traverse them simultaneously.
 - Track sums with `sum1` and `sum2`, and use flags (`search`, `case1`, `case2`) to handle sub-sequence sums efficiently.
 - **Two main cases:**
@@ -40,14 +40,14 @@ This repository contains solutions to five algorithmic problems, each requiring 
   2. Sum elements from the first sequence to match an element in the second.
 - If sequences can't be compressed properly, output `-1`.
 
-### Complexity
+#### Complexity
 **O(max(n, m))** – as we traverse both sequences linearly.
 
 ---
 
-## 🔑 Encryption Optimization
+### 🔑 Encryption Optimization
 
-### Approach
+#### Approach
 1. **Calculate letter frequency per word** 📊.
 2. **Sort words** based on:
    - Descending frequency.
@@ -56,14 +56,14 @@ This repository contains solutions to five algorithmic problems, each requiring 
 3. **Select words greedily** to maximize encryption efficiency.
 4. **Repeat for each letter (`a-z`)** and track the maximum encrypted length.
 
-### Complexity
+#### Complexity
 **O(N²)** – due to nested sorting and frequency checks.
 
 ---
 
-## 🛒 Optimal Offer (Dynamic Programming)
+### 🛒 Optimal Offer (Dynamic Programming)
 
-### Approach
+#### Approach
 - Uses **dynamic programming** (`dp[i]`) to track the minimum price at step `i`.
 - Three options at each step:
   1. Buy normally (`dp[i - 1] + prices[i]`).
@@ -71,14 +71,14 @@ This repository contains solutions to five algorithmic problems, each requiring 
   3. Use a **3-product offer** (`dp[i - 3] + best discount`).
 - Stores **optimal previous results** to ensure minimum cost.
 
-### Complexity
+#### Complexity
 **O(n)** – processes each price efficiently.
 
 ---
 
-## 🧪 Testing
+### 🧪 Testing
 
-### Sample Inputs and Expected Outputs
+#### Sample Inputs and Expected Outputs
 To test the programs, create input files manually and use the Makefile rules. Here are sample test cases for each problem:
 
 1. **Server Power (server.cpp)**
@@ -124,7 +124,7 @@ To test the programs, create input files manually and use the Makefile rules. He
 
 ---
 
-## 📌 Summary
+### 📌 Summary
 
 | Problem        | Approach                  | Complexity |
 |---------------|--------------------------|------------|
